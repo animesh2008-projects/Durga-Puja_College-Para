@@ -17,6 +17,7 @@ import DeveloperCredit from './components/DeveloperCredit'
 import { pujaAudio } from './utils/pujaAudio'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { Analytics } from '@vercel/analytics/react'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -615,6 +616,7 @@ export default function App() {
       >
         {soundEnabled ? '🔊' : '🔈'}
       </button>
+      <Analytics />
     </>
   )
 }
